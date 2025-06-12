@@ -1,0 +1,21 @@
+class MixedErrors {
+    integer valid_var := 123;        // Valid
+    float invalid@ := 3.14;          // Invalid character
+    string unterminated := "hello    // Unterminated string
+    integer another := 456;          // Valid
+    
+    func validFunction() : void {    // Valid
+        write("This works");         // Valid
+    }
+    
+    func invalid#Function() : void { // Invalid character
+        integer x := 12.34.56;       // Invalid number
+        if (x >> 5) {                // Invalid operator
+            write("Error");
+        }
+    /* Unterminated comment
+    
+    func anotherValid() : integer {
+        return 42;
+    }
+// Missing closing brace and comment terminator
