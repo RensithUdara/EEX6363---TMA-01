@@ -1,0 +1,18 @@
+class ArrayProcessor {
+    integer data[10];           
+    float values[5];           
+    
+    func processArray() : void {
+        integer i;              
+        i = 0;                  
+        read(data[0]);          
+        data[1] = data[0] + 5;  
+        
+        while (i < 10) {       
+            if (data[i] > 0) {  
+                write(data[i]); 
+            }
+            i = i + 1;         
+        }
+    }
+}
