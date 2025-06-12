@@ -1,0 +1,14 @@
+/* 
+ * Multi-line comment
+ * Testing string literals and comments
+ */
+class StringHandler {
+    // Single line comment
+    func processStrings() : void {
+        write("Hello World");           // String with spaces
+        write("Line 1\nLine 2\tTabbed"); // Escape sequences
+        write("Quote: \"Hello\"");       // Nested quotes
+        
+        /* Inline comment */ write("After comment");
+    }
+}
