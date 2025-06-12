@@ -1,0 +1,9 @@
+class Test@ {
+    integer x$;
+    float y%;
+    
+    func calculate#() : void {
+        result := x & y ^ 5;
+        write("Result: " + result);
+    }
+}
