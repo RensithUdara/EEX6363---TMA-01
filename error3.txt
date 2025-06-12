@@ -1,0 +1,10 @@
+class NumberError {
+    func test() : void {
+        float a := 12.34.56;      // Multiple decimal points
+        integer b := 1.23e;       // Incomplete exponent
+        float c := 1.23e+;        // Missing exponent digits
+        integer d := 999999999999999999; // Number too large
+        float e := .123;          // Leading decimal point
+        integer f := 0123;        // Octal-like (invalid)
+    }
+}
