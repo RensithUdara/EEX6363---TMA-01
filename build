@@ -1,0 +1,12 @@
+# clean
+rm parser.exe
+rm lex.yy.o y.tab.o
+rm lex.yy.c y.tab.c
+rm parser.tab.h
+
+# working
+bison -d parser.y
+flex scanner.l
+gcc -o parser parser.tab.c lex.yy.c -lfl
+./parser input.txt
+

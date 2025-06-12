@@ -1,0 +1,12 @@
+class Question2 {
+    integer count;
+    float value;
+
+    func initialize () {
+        count = 7;
+        value = 2.71;
+        if (count < 10) {
+            value = value * 2.0;
+        }
+    }
+}
