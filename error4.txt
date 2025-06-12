@@ -1,0 +1,13 @@
+class SyntaxError 
+    integer x;          // Missing opening brace
+    
+    func test( : void { // Missing parameter
+        if x > 5 then   // Missing parentheses
+            write(x)    // Missing semicolon
+        }
+        
+        while           // Missing condition
+            x := x + 1;
+        }               // Unmatched brace
+    
+                        // Missing closing brace for class
