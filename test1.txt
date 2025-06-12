@@ -1,0 +1,8 @@
+class Calculator {
+    integer x;
+    float y;
+    
+    func add() : integer {
+        return x + 1;
+    }
+}
