@@ -1,0 +1,8 @@
+class StringError {
+    func test() : void {
+        write("This string never ends
+        write('Single quote also unterminated
+        write("Valid string");
+        integer x := 5;
+    }
+}
