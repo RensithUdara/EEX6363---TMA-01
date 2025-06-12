@@ -1,0 +1,14 @@
+class MathOperations {
+    func calculate(integer a, float b) : float {
+        integer result;
+        if (a >= 0 and b <> 0.0) then {
+            result := a + b * 2.5e-3;
+            if (result <= 100) {
+                write(result);
+            } else {
+                result := result / 2;
+            }
+        }
+        return result;
+    }
+}
